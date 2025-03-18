@@ -27,26 +27,29 @@
       >
         <!-- Profile header section -->
         <header class="flex items-center space-x-4">
-          <figure class="h-12 w-12 rounded-full">
+          <figure class="h-12 w-12 flex-shrink-0 overflow-hidden rounded-full">
             <img
               src="img/profile-thumbnail.png"
               alt="Sarah Dole"
               width="48"
               height="48"
               loading="lazy"
-              class="h-full w-full object-cover"
+              class="object-cover"
             />
           </figure>
           <!-- Name and username -->
-          <div class="flex flex-col">
-            <h2 class="font-semibold text-neutral-900">Sarah Dole</h2>
+          <div class="flex flex-col overflow-hidden">
+            <h2 class="truncate font-semibold text-neutral-900">Sarah Dole</h2>
             <p class="text-sm text-neutral-600">@sarahdole</p>
           </div>
         </header>
 
         <!-- Testimonial text -->
         <blockquote>
-          <p class="text-base leading-relaxed">
+          <p
+            class="line-clamp-5 text-base leading-relaxed break-words"
+            id="testimonial-text"
+          >
             I've been searching for high-quality abstract images for my design
             projects, and I'm thrilled to have found this platform. The variety
             and depth of creativity are astounding!
@@ -54,7 +57,6 @@
         </blockquote>
       </article>
     </main>
-
-    <script src="js/index.js" defer></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
