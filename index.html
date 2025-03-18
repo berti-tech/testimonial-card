@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Testimonial Card</title>
+    <meta
+      name="description"
+      content="Customer testimonial from Sarah Dole about our design resource platform"
+    />
+    <title>Customer Testimonial - Sarah Dole</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +28,14 @@
         <!-- Profile header section -->
         <header class="flex items-center space-x-4">
           <figure class="h-12 w-12 rounded-full">
-            <img src="img/profile-thumbnail.png" alt="Sarah Dole" />
+            <img
+              src="img/profile-thumbnail.png"
+              alt="Sarah Dole"
+              width="48"
+              height="48"
+              loading="lazy"
+              class="h-full w-full object-cover"
+            />
           </figure>
           <!-- Name and username -->
           <div class="flex flex-col">
@@ -35,7 +46,7 @@
 
         <!-- Testimonial text -->
         <blockquote>
-          <p class="text-base">
+          <p class="text-base leading-relaxed">
             I've been searching for high-quality abstract images for my design
             projects, and I'm thrilled to have found this platform. The variety
             and depth of creativity are astounding!
@@ -44,6 +55,6 @@
       </article>
     </main>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
   </body>
 </html>
